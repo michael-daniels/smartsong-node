@@ -1,6 +1,11 @@
+document.getElementById('settingsIcon').addEventListener('click', () => {
+  document.getElementById('mainView').style.display = "none";
+  document.getElementById('settings').style.display = "block";
+});
 
-document.getElementById('uploadLyricsOpenDiv').addEventListener('click', function () {
-  document.getElementById('uploadLyricsDiv').style.display = "block";
+document.forms.uploadLyricsForm.leaveSettingsButton.addEventListener('click', () => {
+  document.getElementById('mainView').style.display = "block";
+  document.getElementById('settings').style.display = "none";
 });
 
 
@@ -9,7 +14,7 @@ let uploadLyricsArray = [];
   document.forms.uploadLyricsForm.uploadLyricsButton.addEventListener('click', function() {
     uploadLyricsArray.push(document.forms.uploadLyricsForm.uploadLyricsInput.value.replace(/\n/g, " ").replace(/\s\s+/g, " ").split(' '));
     console.log(uploadLyricsArray);
-    document.getElementById('uploadLyricsDiv').style.display = "none";
+    document.forms.uploadLyricsForm.uploadLyricsInput.value = "";
   });
 
 

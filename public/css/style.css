@@ -94,6 +94,7 @@ a > .save-list-item:hover {
   color:#757575;
   font-family: Comfortaa;
   font-weight: bold;
+  padding-top:20px;
 }
 .lyric-logo {
   color:#4CAF50;
@@ -105,7 +106,7 @@ a > .save-list-item:hover {
 }
 .fa-lightbulb-o {
   font-size:26px;
-  margin:0 2px;
+  margin-right:2px;
   color:#4CAF50;
 }
 .save-list {
@@ -204,14 +205,16 @@ a > .save-list-item:hover {
   color: #757575;
 }
 .upload-lyrics-div {
-  display:none;
+  display:;
 }
 .upload-lyrics-button {
   width:100%;
 }
 .upload-lyrics-input {
   text-align: center;
-  padding-top:10px;
+  padding-top: 10px;
+  background-color: white;
+  height:200px;
 }
 .upload-lyrics-open {
   width: 100px;
@@ -220,4 +223,22 @@ a > .save-list-item:hover {
 .upload-lyrics-open-div {
   text-align:right;
   background-color:#f2f2f2;
+}
+.settings-icon {
+  text-align:right;
+  background-color:#f2f2f2;
+  font-size:20px;
+  color:#4CAF50;
+  padding-right:30px;
+}
+.settings {
+  display:none;
+  padding-top:50px;
+  background-color:#f2f2f2;
+}
+.leave-settings-button {
+  border: 1px #f2f2f2 solid;
+}
+.upload-lyrics-button {
+  border: 1px #f2f2f2 solid;
 }
